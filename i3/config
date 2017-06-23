@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -166,17 +166,17 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 
-
-
+new_window 1pixel
 workspace_auto_back_and_forth yes
 
 assign [class="^Chromium.*"] $ws2
 assign [class="^Terminator.*"] $ws1
+assign [class="^URxvt.*"] $ws1
 assign [class="^Telegram.*"] $ws6
 assign [class="^jetbrains-idea.*"] $ws3
 
 exec --no-startup-id chromium
-exec --no-startup-id terminator
+exec --no-startup-id urxvt
 exec --no-startup-id telegram-desktop
 #exec --no-startup-id idea
 
@@ -185,4 +185,10 @@ exec --no-startup-id telegram-desktop
 bar {
         status_command i3status
 	position top
+	separator_symbol " | "
+	strip_workspace_numbers no
+colors {
+        background #2c304a
+        statusline #ffffff
+    }
 }
