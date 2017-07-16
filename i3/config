@@ -43,8 +43,8 @@ bindsym $mod+d exec dmenu_run
 
 # change focus
 bindsym $mod+j focus left
-bindsym $mod+semicolon focus down
-bindsym $mod+l focus up
+bindsym $mod+l focus down
+bindsym $mod+h focus up
 bindsym $mod+k focus right
 
 # alternatively, you can use the cursor keys:
@@ -66,7 +66,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split b
+bindsym $mod+b split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -130,6 +130,8 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
+
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -162,6 +164,8 @@ mode "resize" {
 }
 mode "launch"{
 	bindsym $mod+i exec idea 
+	bindsym $mod+d exec discord
+	bindsym $mod+m exec "i3-msg 'exec sh ~/.config/i3/mpd.sh'"
 	bindsym Return mode "default"
         bindsym Escape mode "default"
 }
@@ -171,18 +175,22 @@ bindsym $mod+o mode "launch"
 new_window 1pixel
 workspace_auto_back_and_forth yes
 
+#assign [class="^Terminator.*"] $ws1
+#assign [class="^URxvt.*"] $ws1
 
 assign [class="^Chromium.*"] $ws2
-assign [class="^Terminator.*"] $ws1
-assign [class="^URxvt.*"] $ws1
-assign [class="^Telegram.*"] $ws4
+
 assign [class="^jetbrains-idea.*"] $ws3
+
+assign [class="^Telegram.*"] $ws4
+assign [class="^discord.*"] $ws4
+
+assign [class="^qbittorrent.*"] $ws8
 
 exec --no-startup-id "i3-msg 'exec sh ~/.config/i3/autostart.sh'"
 exec --no-startup-id "i3-msg 'workspace 1: Bash; append_layout ~/.config/i3/workspace-bash.json'"
 
 exec --no-startup-id chromium
-exec --no-startup-id telegram-desktop
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

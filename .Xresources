@@ -29,8 +29,10 @@ URxvt.lineSpace:            0
 ! Fonts
 URxvt.allow_bold:           false
 /* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
+
 URxvt*font: xft:Cousine:pixelsize=15
 URxvt*boldFont: xft:Cousine:pixelsize=15
+
 
 ! Fix font space
 URxvt*letterSpace: -1
@@ -40,7 +42,9 @@ URxvt.scrollStyle:          rxvt
 URxvt.scrollBar:            false
 
 ! Perl extensions
-URxvt.perl-ext-common:      default,matcher
+URxvt.perl-ext-common:default,mather,keyboard-select
+URxvt.keysym.M-a: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.matcher.button:       1
 URxvt.urlLauncher:          chromium
 
@@ -64,9 +68,9 @@ URxvt.pointerBlank:         true
 
 
 ! special
-*.foreground:   #cccccc
-*.background:   #111111
-*.cursorColor:  #cccccc
+*.foreground:   #4BB4E1
+*.background:   #111A21
+*.cursorColor:  #4BB4E1
 
 ! black
 *.color0:       #222222

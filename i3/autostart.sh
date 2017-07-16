@@ -6,3 +6,5 @@ xrdb ~/.config/.Xresources
 exec urxvt &
 exec urxvt &
 exec urxvt &
+
+exec ~/Programs/Telegram/Telegram &
