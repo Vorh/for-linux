@@ -31,7 +31,7 @@ URxvt.allow_bold:           false
 /* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
 
 URxvt*font: xft:Cousine:pixelsize=15
-URxvt*boldFont: xft:Cousine:pixelsize=15
+URxvt*boldFont: xft:Cousine Bold:pixelsize=15
 
 
 ! Fix font space
@@ -58,48 +58,47 @@ URxvt.pointerBlank:         true
 
 !!Source http://github.com/altercation/solarized
 
-*background: #002b36
-*foreground: #657b83
 !!*fading: 40
 *fadeColor: #002b36
 *cursorColor: #93a1a1
 *pointerColorBackground: #586e75
 *pointerColorForeground: #93a1a1
 
+!!https://terminal.sexy/#ERohIlX3MzNmIlX3AJnMM2bMAGaZAGb_ZpmZmczMMzOZgIOAAMz_Zpn_AJnMAJn_ZszMzP__
+!!http://misc.flogisoft.com/bash/tip_colors_and_formatting
 
 ! special
-*.foreground:   #4BB4E1
-*.background:   #111A21
-*.cursorColor:  #4BB4E1
-
+*.foreground:   #00ccff
+*.background:   #111a21
+*.cursorColor:  #00ccff
 ! black
-*.color0:       #222222
-*.color8:       #666666
+*.color0:       #333366
+*.color8:       #333399
 
 ! red
-*.color1:       #e84f4f
-*.color9:       #d23d3d
+*.color1:       #2255f7
+*.color9:       #84f37f
 
 ! green
-*.color2:       #b7ce42
-*.color10:      #bde077
+*.color2:       #0099cc
+*.color10:      #00ccff
 
 ! yellow
-*.color3:       #fea63c
-*.color11:      #ffe863
+*.color3:       #3366cc
+*.color11:      #6699ff
 
 ! blue
-*.color4:       #66a9b9
-*.color12:      #aaccbb
+*.color4:       #006699
+*.color12:      #0099cc
 
 ! magenta
-*.color5:       #b7416e
-*.color13:      #e16a98
+*.color5:       #0066ff
+*.color13:      #0099ff
 
 ! cyan
-*.color6:       #6d878d
-*.color14:      #42717b
+*.color6:       #669999
+*.color14:      #66cccc
 
 ! white
-*.color7:       #cccccc
-*.color15:      #ffffff
+*.color7:       #99cccc
+*.color15:      #ccffff
