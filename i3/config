@@ -95,14 +95,14 @@ bindsym $mod+a focus parent
 bindsym Control+Mod1+l exec sh ~/.config/i3/lock.sh
 
 # Varibles of workspaces
-set $ws1   
-set $ws2   
-set $ws3   
-set $ws4   
-set $ws5   
-set $ws6   
-set $ws7   
-set $ws8   
+set $ws1   1:
+set $ws2   2:
+set $ws3   3:
+set $ws4   4:
+set $ws5   5:
+set $ws6   6:
+set $ws7   7:
+set $ws8   8:
 set $ws9   9: Conf
 set $ws0   10: Games
 
@@ -191,9 +191,8 @@ assign [class="^Evince.*"] $ws7
 assign [class="^qBittorrent.*"] $ws8
 
 exec --no-startup-id "i3-msg 'exec sh ~/.config/i3/autostart.sh'"
-exec --no-startup-id "i3-msg 'workspace 1: Bash; append_layout ~/.config/i3/workspace-bash.json'"
+exec --no-startup-id "i3-msg 'workspace $ws1; append_layout ~/.config/i3/workspace-bash.json'"
 
-exec --no-startup-id chromium
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -201,7 +200,7 @@ bar {
 	status_command i3blocks -c ~/.config/i3/i3blocks.conf
 	position top
 	separator_symbol " | "
-	strip_workspace_numbers no
+	strip_workspace_numbers yes
 colors {
         background #282c34
         statusline #ffffff

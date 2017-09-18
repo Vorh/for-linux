@@ -2,7 +2,7 @@ open_with
 open_with k
 open_with R
 open_with lh
-open_with 
 shell mkdir Music
 shell mkdir Distribution
 delete
+open_with 
