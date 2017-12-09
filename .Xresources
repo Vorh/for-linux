@@ -31,8 +31,8 @@ URxvt.allow_bold:           false
 /* URxvt.font:                 -*-terminus-medium-r-normal-*-12-120-72-72-c-60-iso8859-1 */
 
 URxvt*font: xft:Cousine:pixelsize=15
-URxvt*boldFont: xft:Cousine Bold:pixelsize=15
 
+URxvt*boldFont: xft:Cousine:pixelsize=15
 
 ! Fix font space
 URxvt*letterSpace: -1
@@ -64,41 +64,42 @@ URxvt.pointerBlank:         true
 *pointerColorBackground: #586e75
 *pointerColorForeground: #93a1a1
 
-!!https://terminal.sexy/#ERohIlX3MzNmIlX3AJnMM2bMAGaZAGb_ZpmZmczMMzOZgIOAAMz_Zpn_AJnMAJn_ZszMzP__
-!!http://misc.flogisoft.com/bash/tip_colors_and_formatting
-
+urxvt*transparent: true
+urxvt*shading: 15
 ! special
-*.foreground:   #00ccff
-*.background:   #111a21
-*.cursorColor:  #00ccff
+*.foreground:   #abb2bf
+*.background:   #1c1d1f
+*.cursorColor:  #abb2bf
+
 ! black
-*.color0:       #333366
-*.color8:       #333399
+*.color0:       #000000
+*.color8:       #000000
 
 ! red
-*.color1:       #2255f7
-*.color9:       #84f37f
+*.color1:       #e06c75
+*.color9:       #e06c75
 
 ! green
-*.color2:       #0099cc
-*.color10:      #00ccff
+*.color2:       #98c379
+*.color10:      #98c379
 
 ! yellow
-*.color3:       #3366cc
-*.color11:      #6699ff
+*.color3:       #d19a66
+*.color11:      #d19a66
 
 ! blue
-*.color4:       #006699
-*.color12:      #0099cc
+*.color4:       #61aeee
+*.color12:      #61aeee
 
 ! magenta
-*.color5:       #0066ff
-*.color13:      #0099ff
+*.color5:       #c678dd
+*.color13:      #c678dd
 
 ! cyan
-*.color6:       #669999
-*.color14:      #66cccc
+*.color6:       #56b6c2
+*.color14:      #56b6c2
 
 ! white
-*.color7:       #99cccc
-*.color15:      #ccffff
+*.color7:       #ffffff
+*.color15:      #ffffff
+

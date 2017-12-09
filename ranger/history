@@ -4,5 +4,5 @@ open_with R
 open_with lh
 shell mkdir Music
 shell mkdir Distribution
-delete
 open_with 
+delete
