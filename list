@@ -1,5 +1,4 @@
-#Programm
-xorg-xinita
+xorg-xinit
 xorg-server
 termite
 git
@@ -11,6 +10,5 @@ gvim
 maim
 vifm
 
-#Fonts
 ttf-croscore
 ttf-font-awesome
