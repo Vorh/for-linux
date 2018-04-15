@@ -2,4 +2,4 @@
 
 
 exec mpd ~/.config/mpd/mpd.conf &
-exec urxvt -e ncmpcpp  &
+exec termite -e ncmpcpp  &

@@ -29,7 +29,7 @@ font pango: Cousine Bold 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec termite
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -195,7 +195,7 @@ assign [class="^Evince.*"] $ws7
 assign [class="^qBittorrent.*"] $ws8
 
 exec --no-startup-id "i3-msg 'exec sh ~/.config/i3/autostart.sh'"
-exec --no-startup-id "i3-msg 'workspace $ws1; append_layout ~/.config/i3/workspace-bash.json'"
+exec --no-startup-id "i3-msg 'workspace $ws1; append_layout ~/.config/i3/terminal-space.json'"
 
 
 # Start i3bar to display a workspace bar (plus the system information i3status
