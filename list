@@ -1,0 +1,16 @@
+#Programm
+xorg-xinita
+xorg-server
+termite
+git
+i3
+i3lock
+xclip
+dmenu
+gvim
+maim
+vifm
+
+#Fonts
+ttf-croscore
+ttf-font-awesome
